@@ -90,7 +90,8 @@ void read_vector(const char* file, regressor& r, bool& initialized, bool reg_vec
   source.read(t,v_length);
   if (strcmp(t,version.c_str()) != 0)
     {
-      cout << "source has possibly incompatible version!" << endl;
+      cout << "source has possibly incompatible version! " << endl;
+      cout << version.c_str() << endl;
       exit(1);
     }
   
